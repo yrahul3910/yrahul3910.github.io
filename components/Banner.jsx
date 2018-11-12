@@ -5,7 +5,7 @@ export default class Banner extends React.Component {
         return (
             <div className="nav">
                 <div className="profile-wrapper">
-                    <img src="../src/profile.png" />
+                    <img src="https://i.imgur.com/H8OmujV.png" />
                 </div>
                 <div className="profile-details">
                     <h1>Rahul Yedida</h1>
