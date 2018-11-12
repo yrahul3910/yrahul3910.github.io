@@ -11,7 +11,7 @@ export default class App extends React.Component {
     render() {
         return (
             <Switch>
-                <Route exact path="/" render={(props) =>
+                <Route exact path="/whyrahul" render={(props) =>
                     <MainPage {...props} />
                 } />
             </Switch>

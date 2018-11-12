@@ -3,14 +3,14 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     mode: "development",
-    devtool: "inline-source-map",
+    //devtool: "inline-source-map",
     entry: [
         "babel-polyfill",
         path.resolve(__dirname, "src/index")
     ],
     output: {
         path: path.resolve(__dirname, "dist"),
-        publicPath: "/",
+        publicPath: "/whyrahul",
         filename: "bundle.js"
     },
     plugins: [

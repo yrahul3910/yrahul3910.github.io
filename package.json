@@ -2,12 +2,15 @@
   "name": "personal-site",
   "version": "1.0.0",
   "description": "Personal Website",
+  "homepage": "http://yrahul3910.github.io/whyrahul",
   "scripts": {
     "lint": "eslint .",
     "watch": "webpack --watch",
     "build": "webpack --mode development",
     "dist": "webpack",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "predeploy": "npm run dist",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -37,6 +40,7 @@
   "author": "Rahul Yedida",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react-router-dom": "^4.3.1"
   }
 }
