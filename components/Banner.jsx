@@ -12,6 +12,11 @@ export default class Banner extends React.Component {
                     <h2>Undergraduate Student</h2>
                     <h2>PES University, Electronic City</h2>
                 </div>
+                <ul className="nav-menu-sticky">
+                    <li>Research</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
             </div>
         );
     }
