@@ -41,6 +41,7 @@
   "license": "MIT",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "moment": "^2.22.2",
     "react-router-dom": "^4.3.1"
   }
 }
