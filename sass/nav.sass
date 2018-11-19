@@ -1,10 +1,8 @@
 // .nav is the <Banner /> component
 .nav
-    top: 0
     background-color: $grey
     color: white
-    height: 100vh
-
+    height: calc(100vh - 51px) // 51px is the height of the nav
     display: flex
     flex-direction: column
     justify-content: center
@@ -14,7 +12,7 @@
         font-family: 'EB Garamond', 'Times New Roman', Times, serif
 
     .profile-wrapper
-        margin-top: 50px
+        margin-top: 20px
         margin-bottom: 20px
 
         img
@@ -29,22 +27,71 @@
 
         h2
             margin: 5px
+    
+    a
+        color: white
+    
+    i.down-arrow
+        display: block
+        height: 20px
+        position: relative
+        cursor: pointer
 
-    .nav-menu-sticky
-        background-color: transparent
+        &:after, &:before
+            position: absolute
+            display: block
+            content: ''
+            border: 25px solid transparent 
+        
+        &:after
+            top: -10px
+            border-top-color: $grey
+        
+        &:before
+            top: 0
+            border-top-color: white
 
-        li
-            list-style-type: none
-            text-transform: uppercase
-            display: inline-block
-            margin: 0 20px
-            cursor: pointer
-            padding: 10px
-            border-radius: 4px
-            transition: background-color 0.5s ease-out
+.nav-menu-sticky
+    background-color: $red
+    display: flex
+    justify-content: center
+    margin: 0
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25)
+    position: sticky
+    top: 0
+    
+    a
+        color: white
 
-            &:hover
-                background-color: rgba(0, 0, 0, 0.14)
+    li
+        color: white
+        list-style-type: none
+        text-transform: uppercase
+        display: inline-block
+        margin: 0
+        cursor: pointer
+        padding: 10px 20px
+        border-radius: 4px
+        transition: background-color 0.5s ease-out
+
+        /* The next two create the animation to show the bottom border
+            from the middle, expanding outward, on hover.
+            Source: https://stackoverflow.com/a/27164099 */
+        &:after
+            content: ' '
+            margin: auto
+            display: block
+            height: 3px
+            width: 0
+            background: transparent
+            transition: width .5s ease, background-color .5s ease
             
-            a:hover
-                text-decoration: none
+        &:hover:after
+            width: 100%
+            background: white
+
+        &:hover
+            background-color: rgba(0, 0, 0, 0.14)
+            
+        a:hover
+            text-decoration: none

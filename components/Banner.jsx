@@ -1,6 +1,16 @@
 import React from "react";
 
 export default class Banner extends React.Component {
+    constructor() {
+        super();
+        this.scroll = this.scroll.bind(this);
+    }
+
+    scroll() {
+        let el = document.getElementById("hello");
+        el.scrollIntoView({block: "start", behavior: "smooth"});
+    }
+
     render() {
         return (
             <div className="nav">
@@ -17,12 +27,7 @@ export default class Banner extends React.Component {
                     </h2>
                     <br/><h2><em>(formerly PES Institute of Technology, South Campus)</em></h2>
                 </div>
-                <ul className="nav-menu-sticky">
-                    <li>Research</li>
-                    <li>Projects</li>
-                    <li><a href="https://1drv.ms/b/s!AiFT_8UzfVHdskGZUeaqLNACzkcR">CV</a></li>
-                    <li>Contact</li>
-                </ul>
+                <p className="arrow"><i className="down-arrow" onClick={this.scroll}></i></p>
             </div>
         );
     }
