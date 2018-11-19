@@ -3,6 +3,7 @@ import moment from "moment";
 
 import Banner from "./Banner.jsx";
 import StickyNav from "./StickyNav.jsx";
+import CardGrid from "./CardGrid.jsx";
 
 export default class MainPage extends React.Component {
     constructor(props) {
@@ -35,6 +36,10 @@ export default class MainPage extends React.Component {
                     </section> 
                     <section id="research" className="blue-background">
                         <h1>Research Interests</h1>
+                        <p>
+                            I majored in Computer Science out of my zeal for the field. This zeal has led me to explore several areas, some of which I took a strong interest in, and others not so much. Below are the fields that I would love to pursue research in.
+                        </p>
+                        <CardGrid />
                     </section>                   
                 </main>
             </div>
