@@ -5,6 +5,7 @@ import Banner from "./Banner.jsx";
 import StickyNav from "./StickyNav.jsx";
 import CardGrid from "./CardGrid.jsx";
 import researchInterests from "../src/research_interests";
+import contacts from "../src/contacts.jsx";
 
 export default class MainPage extends React.Component {
     constructor(props) {
@@ -56,7 +57,29 @@ export default class MainPage extends React.Component {
                         <p className="research-item">
                             Currently, I am working on an omnibus predictive model for scientometric data.
                         </p>
-                    </section>                   
+                    </section>
+                    <section id="projects">
+                        <h1>Projects</h1>
+                        <p>
+                            Since tenth grade, I've been actively developing software for Windows and the Web. My first software was Xtreme Calculations, a math application that over several websites, garnered over 20,000 downloads. It has been a humbling experience to be held accountable for any bugs in the software. I went on to develop other small software that either I or my school required, including an electronic voting application. The above applications were largely developed using VB.NET, a language I still strongly believe is an excellent beginner language.
+                        </p>
+                        <p>
+                            In college, I started learning web development. In particular, I learned the MERN (MongoDB, Express, React, Node.js) stack, and I think it's a wonderful way to develop websites. I later took a course on ASP.NET Core 2, which I think is extremely well-designed. I rewrote my journal application using Electron, largely because my earlier .NET application did not work on GNU/Linux. I built some other web applications, including an issue reporting system that filtered duplicates using Latent Semantic Analysis and a video sharing website.
+                        </p>
+                        <p>
+                            I consider myself fluent in the MERN stack, Python/Flask, and to some extent, C# and VB.NET. I am happy to do full-stack work, though I have some preference for back end development (we all know it is the easier part!) I work well in Agile teams with people who can pick up work independently and discuss any trouble they have with their share of the work.
+                        </p>
+                        <p>
+                            The above is only a small sample of my project work. For a more comprehensive list of my notable projects, please view my CV. My GitHub profile unfortunately has a few projects that I keep telling myself that I will get back to!
+                        </p>
+                    </section>
+                    <section id="contact" className="grey-background">
+                        <h1>Contact</h1>
+                        <p>
+                            Like I mentioned earlier, I deactivated my Facebook and Messenger accounts, and I do not use WhatsApp. However, you can find me on the following platforms. For most purposes, I prefer being contacted by email, because I always have Thunderbird open to notify me, and I reply quickest to email.
+                        </p>
+                        <CardGrid cards={contacts} />
+                    </section>               
                 </main>
             </div>
         );

@@ -13,9 +13,15 @@ export default class StickyNav extends React.Component {
         el.scrollIntoView({block: "start", behavior: "smooth"});
     }
 
-    project() {}
+    project() {
+        let el = document.getElementById("projects");
+        el.scrollIntoView({block: "start", behavior: "smooth"});
+    }
 
-    contact() {}
+    contact() {
+        let el = document.getElementById("contact");
+        el.scrollIntoView({block: "start", behavior: "smooth"});
+    }
 
     render() {
         return <ul className="nav-menu-sticky">
