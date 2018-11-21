@@ -5,6 +5,7 @@ main
         text-align: center
         margin-bottom: $margin
     
+    // Styling for sections
     section
         padding: $margin
 
@@ -27,3 +28,15 @@ main
         // Only indent first paragraph
         &+p
             text-indent: 1em
+    
+    // Research and project item links
+    .research-item, .project-item
+        color: white
+        text-indent: 0
+        
+        &:before
+            content: '\2022'
+            font-size: 32px
+            position: relative
+            top: 5px
+            margin-right: 5px

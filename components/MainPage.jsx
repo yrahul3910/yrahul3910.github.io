@@ -4,6 +4,7 @@ import moment from "moment";
 import Banner from "./Banner.jsx";
 import StickyNav from "./StickyNav.jsx";
 import CardGrid from "./CardGrid.jsx";
+import researchInterests from "../src/research_interests";
 
 export default class MainPage extends React.Component {
     constructor(props) {
@@ -37,9 +38,24 @@ export default class MainPage extends React.Component {
                     <section id="research" className="blue-background">
                         <h1>Research Interests</h1>
                         <p>
-                            I majored in Computer Science out of my zeal for the field. This zeal has led me to explore several areas, some of which I took a strong interest in, and others not so much. Below are the fields that I would love to pursue research in.
+                            I majored in Computer Science out of my zeal for the field. This zeal has led me to explore several areas, some of which I took a strong interest in, and others not so much. Below are the fields that I would love to pursue research in, in no particular order.
                         </p>
-                        <CardGrid />
+                        <CardGrid cards={researchInterests} />
+                        <h1>Research Work</h1>
+                        <p>
+                            <b>
+                                <a className="research-item" href="https://www.ijsr.net/conf/RISE2017/IJSR16.pdf">
+                                    Yedida et al., 2017. Employee Attrition Prediction
+                                </a>
+                            </b>
+                            . I worked in a team to predict employee attrition using the k-Nearest Neighbors algorithm.
+                        </p>
+                        <p className="research-item">
+                            I worked on an image restoration problem in astronomy using convolutional neural networks.
+                        </p>
+                        <p className="research-item">
+                            Currently, I am working on an omnibus predictive model for scientometric data.
+                        </p>
                     </section>                   
                 </main>
             </div>
