@@ -67,6 +67,9 @@ export default class MainPage extends React.Component {
                             In college, I started learning web development. In particular, I learned the MERN (MongoDB, Express, React, Node.js) stack, and I think it's a wonderful way to develop websites. I later took a course on ASP.NET Core 2, which I think is extremely well-designed. I rewrote my journal application using Electron, largely because my earlier .NET application did not work on GNU/Linux. I built some other web applications, including an issue reporting system that filtered duplicates using Latent Semantic Analysis and a video sharing website.
                         </p>
                         <p>
+                            I have also been tinkering with some fun side projects recently, one of which involved me time logging every activity I do for around five or six months. I used this data to analyse my most productive hours (spoiler alert: around 6 PM and 9 PM). I also started <a href="https://beginningwithml.wordpress.com" style={{textDecoration: "underline"}}>a blog to teach machine learning to beginners</a> in a way I believe that I would have found helpful when I had started, making sure it has the mathematical rigor, but also an intuitive explanation, and Python code to solidify concepts. I used Andrew Ng's CS229 course at Stanford University as the foundation because I liked its mathematical presentation.
+                        </p>
+                        <p>
                             I consider myself fluent in the MERN stack, Python/Flask, and to some extent, C# and VB.NET. I am happy to do full-stack work, though I have some preference for back end development (we all know it is the easier part!) I work well in Agile teams with people who can pick up work independently and discuss any trouble they have with their share of the work.
                         </p>
                         <p>
