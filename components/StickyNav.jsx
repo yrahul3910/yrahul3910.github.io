@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default class StickyNav extends React.Component {
     constructor() {
@@ -29,6 +30,7 @@ export default class StickyNav extends React.Component {
             <li onClick={this.project}>Projects</li>
             <li><a href="https://1drv.ms/b/s!AiFT_8UzfVHdskGZUeaqLNACzkcR">CV</a></li>
             <li onClick={this.contact}>Contact</li>
+            <li><Link to="/whyrahul/tldr">TL;DR</Link></li>
         </ul>
     }
 }

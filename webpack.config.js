@@ -2,6 +2,9 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+    devServer: {
+        historyApiFallback: true
+    },
     mode: "development",
     //devtool: "inline-source-map",
     entry: [
@@ -10,7 +13,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, "dist"),
-        publicPath: "/whyrahul",
+        publicPath: "/",
         filename: "bundle.js"
     },
     plugins: [

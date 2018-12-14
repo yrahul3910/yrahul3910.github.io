@@ -55,7 +55,7 @@ export default class MainPage extends React.Component {
                             I worked on an image restoration problem in astronomy using convolutional neural networks.
                         </p>
                         <p className="research-item">
-                            Currently, I am working on an omnibus predictive model for scientometric data.
+                            Currently, I am working on identifying prolific authors from scientometric data.
                         </p>
                     </section>
                     <section id="projects">
@@ -79,7 +79,7 @@ export default class MainPage extends React.Component {
                     <section id="contact" className="grey-background">
                         <h1>Contact</h1>
                         <p>
-                            Like I mentioned earlier, I deactivated my Facebook and Messenger accounts, and I do not use WhatsApp. However, you can find me on the following platforms. For most purposes, I prefer being contacted by email, because I always have Thunderbird open to notify me, and I reply quickest to email.
+                            Like I mentioned earlier, I deactivated my Facebook account, and I do not use WhatsApp. However, you can find me on the following platforms. For most purposes, I prefer being contacted by email, because I always have Thunderbird open to notify me, and I reply quickest to email.
                         </p>
                         <CardGrid cards={contacts} />
                     </section>               

@@ -5,7 +5,7 @@ export default class Card extends React.Component {
     render() {
         return <div className="card">
             <h2 className="card-title">{this.props.title}</h2>
-            <p>{this.props.info}</p>
+            <div>{this.props.info}</div>
         </div>
     }
 }
