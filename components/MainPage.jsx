@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "./Banner.jsx";
 import StickyNav from "./StickyNav.jsx";
 import CardGrid from "./CardGrid.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 import researchInterests from "../src/research_interests";
 import contacts from "../src/contacts.jsx";
@@ -13,9 +14,22 @@ export default class MainPage extends React.Component {
         super(props);
     }
 
+    componentDidMount() {
+        window.onscroll = () => {
+            let el = document.getElementById("scroll-button");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                el.classList.add("visible");
+            }
+            else {
+                el.classList.remove("visible");
+            }
+        };
+    }
+
     render() {
         return (
             <div>
+                <ScrollToTop />
                 <Banner />
                 <StickyNav />
                 <main>
