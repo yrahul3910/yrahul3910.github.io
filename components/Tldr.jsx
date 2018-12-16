@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export default class Tldr extends React.Component {
     render() {
@@ -15,6 +16,7 @@ export default class Tldr extends React.Component {
                 </p>
                 <p>You can email me at y.rahul@outlook.com</p>
                 <p>In the style of the early Internet days, <a style={{textDecoration: "underline", color: "teal"}} href="#">please sign the guest book!</a> (no, this sadly doesn't work yet).</p>
+                <p><Link to="/whyrahul" style={{textDecoration: "underline"}}>Back to main page</Link></p>
             </div>
         );
     }

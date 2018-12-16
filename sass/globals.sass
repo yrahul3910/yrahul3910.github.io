@@ -1,6 +1,7 @@
 $grey: #343434
 $red: #A51C30
 $blue: #293352
+$lightgreen: #C3D7A4
 
 $font-family: 'Merriweather', 'Times New Roman', serif
 $line-height: 28px
@@ -8,6 +9,12 @@ $font-weight: 300
 $margin: 50px
 $code-background: rgba(21, 31, 35, 0.2)
 $font-color: rgb(65, 65, 65)
+
+*
+    font-family: $font-family
+    color: $font-color
+    font-weight: $font-weight
+    line-height: $line-height
 
 body
     margin: 0
@@ -24,16 +31,22 @@ i
 
 a
     color: $font-color
-    text-decoration: none
 
     &:hover
         text-decoration: underline
 
-*
-    font-family: $font-family
-    color: $font-color
-    font-weight: $font-weight
-    line-height: $line-height
+b
+    font-weight: bold
+
+.chip
+    color: white
+    background-color: green
+    padding: 5px
+    border-radius: 25px
+    margin-left: 10px
+    text-transform: uppercase
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-size: 0.9rem
 
 @import nav
 @import main

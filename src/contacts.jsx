@@ -9,10 +9,11 @@ export default [
                     <i className="fab fa-skype"></i>
                     y.rahul@outlook.com
                 </div>
-                <div>
+                <a href="mailto:y.rahul@outlook.com">
                     <i className="fas fa-envelope"></i>
                     y.rahul@outlook.com
-                </div>
+                </a>
+                <span className="chip">Preferred</span>
                 <div>
                     <i className="fab fa-telegram"></i>
                     @theyedida
@@ -25,16 +26,22 @@ export default [
         info: (
             <div>
                 <div>
-                    <i className="fab fa-github"></i>
-                    yrahul3910
+                    <a href="https://www.github.com/yrahul3910">
+                        <i className="fab fa-github"></i>
+                        yrahul3910
+                    </a>
                 </div>
                 <div>
-                    <i className="fab fa-researchgate"></i>
-                    Rahul Yedida
+                    <a href="https://www.researchgate.net/profile/Rahul_Yedida2">
+                        <i className="fab fa-researchgate"></i>
+                        Rahul Yedida
+                    </a>
                 </div>
-                <div>
-                    <i className="fab fa-linkedin-in"></i>
-                    Rahul Yedida
+                <div>                    
+                    <a href="https://www.linkedin.com/in/rahul-yedida/">
+                        <i className="fab fa-linkedin-in"></i>
+                        Rahul Yedida
+                    </a>
                 </div>
             </div>
         )
@@ -44,16 +51,22 @@ export default [
         info: (
             <div>
                 <div>
-                    <i className="fab fa-instagram"></i>
-                    @r.yedi.da
+                    <a href="https://www.messenger.com/t/rahul.yedida.5">
+                        <i className="fab fa-instagram"></i>
+                        @r.yedi.da
+                    </a>
                 </div>
                 <div>
-                    <i className="fab fa-quora"></i>
-                    Rahul Yedida
+                    <a href="https://www.quora.com/profile/Rahul-Yedida">
+                        <i className="fab fa-quora"></i>
+                        Rahul Yedida
+                    </a>
                 </div>
                 <div>
-                    <i className="fab fa-facebook-messenger"></i>
-                    rahul.yedida.5
+                    <a href="https://www.instagram.com/r.yedi.da/">
+                        <i className="fab fa-facebook-messenger"></i>
+                        rahul.yedida.5
+                    </a>
                 </div>
             </div>
         )
