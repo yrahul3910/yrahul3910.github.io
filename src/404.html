@@ -3,23 +3,31 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Merriweather';
+        }
+    </style>
     <title>404</title>
 </head>
 <!--
     This is a filler comment to make the size of this file greater
     than 512 bytes.
 
-    This is a filler comment to make the size of this file greater
-    than 512 bytes.
-
-    This is a filler comment to make the size of this file greater
-    than 512 bytes.
-
-    This is a filler comment to make the size of this file greater
-    than 512 bytes.
+    Oh, the things we do for IE.
 -->
 <body>
-    <script type="text/javascript" src="https://raw.githubusercontent.com/websemantics/gh-pages-spa/master/ghspa.js"></script>
+    <div style="text-align: center">
+        <h1>404</h1>
+        <p>You will be redirected to the main page in 5 seconds.</p>
+        <p>Or, <a href="/whyrahul">click here</a> to manually redirect.</p>
+    </div>
+    <script>
+        setTimeout(() => {
+            window.location.replace("/whyrahul");
+        }, 5000);
+    </script>
 </body>
 
 </html>
