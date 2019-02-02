@@ -28,8 +28,8 @@ export default class StickyNav extends React.Component {
         return <ul className="nav-menu-sticky">
             <li onClick={this.research}>Research</li>
             <li onClick={this.project}>Projects</li>
-            <li><a href="https://1drv.ms/b/s!AiFT_8UzfVHdskGZUeaqLNACzkcR">CV</a></li>
             <li onClick={this.contact}>Contact</li>
+            <li><a href="https://1drv.ms/b/s!AiFT_8UzfVHdskGZUeaqLNACzkcR">CV</a></li>
             <li><Link to="/whyrahul/tldr">TL;DR</Link></li>
         </ul>
     }

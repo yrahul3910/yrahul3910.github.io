@@ -13,7 +13,7 @@ export default class Banner extends React.Component {
 
     render() {
         return (
-            <div className="nav">
+            <div className="nav" id="top">
                 <div className="profile-wrapper">
                     <img src="https://i.imgur.com/H8OmujV.png" />
                 </div>
