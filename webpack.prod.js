@@ -5,7 +5,7 @@ module.exports = {
     devServer: {
         historyApiFallback: true
     },
-    mode: "development",
+    mode: "production",
     //devtool: "inline-source-map",
     entry: [
         "babel-polyfill",
