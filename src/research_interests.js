@@ -1,7 +1,11 @@
 export default [
     {
         title: "Machine Learning and Data Science",
-        info: "I am interested in machine learning and its applications, especially in areas outside computer science. Solving real-world problems through recent methods in ML excites me. In addition, I love working with image and text data in deep learning models. I also enjoy extracting insights from data, and working with feature extraction/transformation."
+        info: "I am interested in machine learning and its applications, especially in areas outside computer science. Solving real-world problems through recent methods in ML excites me. In addition, I am interested in theoretical ML dealing with the math behind the scenes. I also enjoy extracting insights from data, and working with feature extraction/transformation."
+    },
+    {
+        title: "Deep Learning",
+        info: "Computer vision and designing architectures for various deep learning problems is another of my research interests. Examples of papers I loved are \"Delving Deep Into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification\" and \"The One Hundred Layers Tiramisu: Fully Convolutional DenseNets for Semantic Segmentation\"."
     },
     {
         title: "Computational Neuroscience",
