@@ -1,7 +1,16 @@
 .grid-parent
     display: grid
-    grid-template-columns: 25vw 25vw 25vw
-    grid-template-rows: auto auto //60vh 60vh
+
+    @media screen and (min-width: 1025px)
+        grid-template-columns: 25vw 25vw 25vw
+        grid-template-rows: auto auto //60vh 60vh
+
+    @media screen and (min-width: 481px) and (max-width: 1024px)
+        grid-template-columns: 40vw 40vw
+
+    @media screen and (min-width: 320px) and (max-width: 480px)
+        grid-template-columns: 80vw
+
     grid-column-gap: 5vw
     grid-row-gap: 5vh
     margin-bottom: 50px
