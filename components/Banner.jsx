@@ -27,7 +27,7 @@ export default class Banner extends React.Component {
                     </h2>
                     <br/><h2><em>(formerly PES Institute of Technology, South Campus)</em></h2>
                 </div>
-                <p className="arrow"><i className="down-arrow" onClick={this.scroll}></i></p>
+                <i className="fas fa-chevron-down" onClick={this.scroll}></i>
             </div>
         );
     }
