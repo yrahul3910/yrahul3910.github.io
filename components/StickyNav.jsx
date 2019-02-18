@@ -7,6 +7,7 @@ export default class StickyNav extends React.Component {
         this.research = this.research.bind(this);
         this.project = this.project.bind(this);
         this.contact = this.contact.bind(this);
+        this.showMenu = this.showMenu.bind(this);
     }
 
     research() {
@@ -24,8 +25,14 @@ export default class StickyNav extends React.Component {
         el.scrollIntoView({block: "start", behavior: "smooth"});
     }
 
+    showMenu() {
+        let el = document.getElementsByClassName("nav-menu-sticky")[0];
+        el.classList.toggle("expanded");
+    }
+
     render() {
         return <ul className="nav-menu-sticky">
+            <li onClick={this.showMenu} id="hamburger"><i className="fas fa-bars"></i></li>
             <li onClick={this.research}>Research</li>
             <li onClick={this.project}>Projects</li>
             <li onClick={this.contact}>Contact</li>
