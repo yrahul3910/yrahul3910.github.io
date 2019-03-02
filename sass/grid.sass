@@ -20,9 +20,23 @@
         border-top: 4px solid $red
         padding: 20px
 
+        // When active, the card should span 2 rows.
+        &.active
+            grid-row-end: span 2
+
+        h2
+            cursor: pointer
+
         h2, p
             color: $font-color !important
 
         .card-title
             font-size: 18px
             font-weight: bold
+        
+        // Initially, don't display any content in the cards.
+        & > div
+            display: none
+
+            &.visible
+                display: initial
