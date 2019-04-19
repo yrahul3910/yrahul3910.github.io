@@ -6,7 +6,9 @@ import Card from "./Card.jsx";
 export default class CardGrid extends React.Component {
     render() {
         let cards = this.props.cards.map((data, i) => 
-            <Card key={i} title={data.title} info={data.info} />
+            <Card key={i} active={this.props.active} 
+                title={data.title} 
+                info={data.info} />
         );
         return (
             <div className="grid-parent">
@@ -17,5 +19,6 @@ export default class CardGrid extends React.Component {
 }
 
 CardGrid.propTypes = {
-    cards: PropTypes.array.isRequired
+    cards: PropTypes.array.isRequired,
+    active: PropTypes.bool
 };

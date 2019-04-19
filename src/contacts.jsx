@@ -11,7 +11,7 @@ export default [
                 </div>
                 <a href="mailto:y.rahul@outlook.com">
                     <i className="fas fa-envelope"></i>
-                    y.rahul@outlook.com
+                    E-mail
                 </a>
                 <span className="chip">Preferred</span>
                 <div>
@@ -28,19 +28,19 @@ export default [
                 <div>
                     <a href="https://www.github.com/yrahul3910">
                         <i className="fab fa-github"></i>
-                        yrahul3910
+                        GitHub
                     </a>
                 </div>
                 <div>
                     <a href="https://www.researchgate.net/profile/Rahul_Yedida2">
                         <i className="fab fa-researchgate"></i>
-                        Rahul Yedida
+                        ResearchGate
                     </a>
                 </div>
                 <div>                    
                     <a href="https://www.linkedin.com/in/rahul-yedida/">
                         <i className="fab fa-linkedin-in"></i>
-                        Rahul Yedida
+                        LinkedIn
                     </a>
                 </div>
             </div>
@@ -53,19 +53,19 @@ export default [
                 <div>
                     <a href="https://www.messenger.com/t/rahul.yedida.5">
                         <i className="fab fa-instagram"></i>
-                        @r.yedi.da
+                        Messenger
                     </a>
                 </div>
                 <div>
                     <a href="https://www.quora.com/profile/Rahul-Yedida">
                         <i className="fab fa-quora"></i>
-                        Rahul Yedida
+                        Quora
                     </a>
                 </div>
                 <div>
                     <a href="https://www.instagram.com/r.yedi.da/">
                         <i className="fab fa-facebook-messenger"></i>
-                        rahul.yedida.5
+                        Instagram
                     </a>
                 </div>
             </div>

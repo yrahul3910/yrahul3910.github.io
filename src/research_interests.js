@@ -1,6 +1,6 @@
 export default [
     {
-        title: "Machine Learning and Data Science",
+        title: "ML and Data Science",
         info: "I am interested in machine learning and its applications, especially in areas outside computer science. Solving real-world problems through recent methods in ML excites me. In addition, I am interested in theoretical ML dealing with the math behind the scenes. I also enjoy extracting insights from data, and working with feature extraction/transformation."
     },
     {

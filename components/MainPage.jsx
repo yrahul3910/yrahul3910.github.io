@@ -1,6 +1,7 @@
 import React from "react";
 
 import Banner from "./Banner.jsx";
+import NewBanner from "./NewBanner.jsx";
 import StickyNav from "./StickyNav.jsx";
 import CardGrid from "./CardGrid.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
@@ -30,18 +31,32 @@ export default class MainPage extends React.Component {
         return (
             <div>
                 <ScrollToTop />
-                <Banner />
+                <NewBanner />
                 <StickyNav />
                 <main>
-                    <section id="hello">
-                        <h1>Hello!</h1>
-                        <p>
-                            I am Rahul Yedida, and I was born on October 27, 1997; alas, my surname initial is Y, which has led to a lot of "Why, Rahul?" jokes (hence the URL). I was born in Raipur, India. I grew up in Mississauga, Canada, and moved to Bangalore, India in 2006 to continue my middle schooling.
-                        </p>
-                        <p>
-                            I love learning about how the world works, especially from a sociological perspective. Peter Berger's "Invitation to Sociology" and Emile Durkheim's "Suicide" have been revealing indeed. I also enjoy development, and right from high school, I have worked on developing desktop software and web applications. It is liberating to not need to rely on WYSIWYG editors and the like, and to be able to fully define what and how you want things to work, and to be able to write software to suit your own needs. Finally, I enjoy studying applied math and the working behind algorithms, as my peers will tell you with a sigh.
-                        </p>
-                    </section> 
+                    <div className="split-box">
+                        <div className="nav">
+                            <i className="fas fa-download" style={{ color: "rgb(125, 140, 31)", fontSize: 52 }}></i>
+                            <div className="profile-details">
+                                <p style={{ color: "rgb(125, 140, 31)", fontSize: 40, fontWeight: "500" }}>20,715</p>
+                                <h2 style={{ color: "rgb(125, 150, 31)", margin: "0 50px" }}>The number of downloads of Xtreme Calculations as on April 19, 2019.</h2>
+                            </div>
+
+                            <i className="fas fa-quote-left" style={{ color: "rgb(125, 140, 31)", fontSize: 52, marginBottom: "30px" }}></i>
+                            <div className="profile-details">
+                                <h2 style={{ color: "rgb(125, 150, 31)", margin: "0 50px" }}>[...] Xtreme Calculations is quite a complete suite that is able to provide a lot of functions in an attractive package.</h2>
+                                <h2 style={{ alignSelf: "flex-end", margin: "0 50px" }}>Softpedia</h2>
+                            </div>
+                        </div>
+                        <div className="nav">
+                            <div className="profile-details">
+                                <h1 style={{ fontSize: 40, fontWeight: "500" }}>AIR 21</h1>
+                                <h2 style={{ margin: "0 50px" }}>All India Rank in the National Creativity Aptitude Test (NCAT) 2017, a nation-wide aptitude test with 198 participating institutions.</h2>
+                                <h1 style={{ fontSize: 40, fontWeight: "500" }}>66%ile</h1>
+                                <h2 style={{ margin: "0 50px" }}>In the GRE Mathematics Subject Test, October 27, 2018, with a score 730/990</h2>
+                            </div>
+                        </div>
+                    </div>
                     <section id="research" className="blue-background">
                         <h1>Research Interests</h1>
                         <p>
@@ -59,13 +74,13 @@ export default class MainPage extends React.Component {
                         </p>
                         <CardGrid cards={projects} />
                     </section>
-                    <section id="contact" className="grey-background">
+                    <section id="contact" className="red-background">
                         <h1>Contact</h1>
                         <p>
                             Please contact me by clicking on any of the following links.
                         </p>
-                        <CardGrid cards={contacts} />
-                    </section>               
+                        <CardGrid active={true} cards={contacts} />
+                    </section>
                 </main>
             </div>
         );
