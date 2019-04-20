@@ -1,12 +1,18 @@
 .split-box
-    display: flex
+    @media screen and (min-width: 1024px)
+        display: flex
     
 // .nav is the <Banner /> component
 .nav
     background-color: white
     color: $grey
-    height: calc(100vh - 51px) // 51px is the height of the nav
-    width: 50%
+    min-height: calc(100vh - 51px) // 51px is the height of the nav
+
+    @media screen and (min-width: 1024px)
+        width: 50%
+    @media screen and (max-width: 1024px)
+        width: 100%
+
     display: flex
     flex-direction: column
     justify-content: center
