@@ -1,6 +1,5 @@
 import React from "react";
 
-import Banner from "./Banner.jsx";
 import NewBanner from "./NewBanner.jsx";
 import StickyNav from "./StickyNav.jsx";
 import CardGrid from "./CardGrid.jsx";
@@ -60,7 +59,7 @@ export default class MainPage extends React.Component {
                     <section id="research" className="blue-background">
                         <h1>Research Interests</h1>
                         <p>
-                            I majored in Computer Science out of my zeal for the field. This zeal has led me to explore several areas, some of which I took a strong interest in, and others not so much. My research work can be found on my ResearchGate profile (link at bottom of the page). Below are the fields that I would love to pursue research in, in no particular order.
+                            I majored in Computer Science out of my zeal for the field. My research work can be found on <a style={{ color: "white" }} href="https://www.researchgate.net/profile/Rahul_Yedida2">my ResearchGate profile</a>. Below are the fields that I would love to pursue research in, in no particular order.
                         </p>
                         <CardGrid cards={researchInterests} />
                     </section>
@@ -70,7 +69,7 @@ export default class MainPage extends React.Component {
                             I consider myself fluent in the MERN stack, Python/Flask, and to some extent, C# and VB.NET. I work well in Agile teams with people who can pick up work independently and discuss any trouble they have with their share of the work.
                         </p>
                         <p>
-                            Below is a sample of my projects. For a more comprehensive list of my notable projects, please view my CV. My <a href="https://www.github.com/yrahul3910">GitHub profile</a> unfortunately has a few projects that I keep telling myself that I will get back to!
+                            Below is a sample of my projects. For a more comprehensive list of my notable projects, please view my CV.
                         </p>
                         <CardGrid cards={projects} />
                     </section>
