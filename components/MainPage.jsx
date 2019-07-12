@@ -4,10 +4,12 @@ import NewBanner from "./NewBanner.jsx";
 import StickyNav from "./StickyNav.jsx";
 import CardGrid from "./CardGrid.jsx";
 import ScrollToTop from "./ScrollToTop.jsx";
+import SkillSet from "./SkillSet.jsx";
 
 import researchInterests from "../src/research_interests";
 import contacts from "../src/contacts.jsx";
 import projects from "../src/projects.jsx";
+import skills from "../src/skills.jsx";
 
 export default class MainPage extends React.Component {
     constructor(props) {
@@ -49,7 +51,7 @@ export default class MainPage extends React.Component {
                         </div>
                         <div className="nav">
                             <div className="profile-details">
-                                <h1 style={{ fontSize: 40, fontWeight: "500" }}>AIR 21</h1>
+                                <h1 style={{ fontSize: 40, fontWeight: "500" }}>AIR 27</h1>
                                 <h2 style={{ margin: "0 50px" }}>All India Rank in the National Creativity Aptitude Test (NCAT) 2017, a nation-wide aptitude test with 198 participating institutions.</h2>
                                 <h1 style={{ fontSize: 40, fontWeight: "500" }}>66%ile</h1>
                                 <h2 style={{ margin: "0 50px" }}>In the GRE Mathematics Subject Test, October 27, 2018, with a score 730/990</h2>
@@ -72,6 +74,11 @@ export default class MainPage extends React.Component {
                             Below is a sample of my projects. For a more comprehensive list of my notable projects, please view my CV.
                         </p>
                         <CardGrid cards={projects} />
+
+                        <div id="skills-section">
+                            <h1>Skills</h1>
+                            <SkillSet skills={skills} />
+                        </div>
                     </section>
                     <section id="contact" className="red-background">
                         <h1>Contact</h1>

@@ -64,6 +64,10 @@ a
 b
     font-weight: bold
 
+#skills-section
+    @media screen and (max-width: 767px)
+        display: none
+
 .chip
     color: white
     background-color: green
@@ -73,6 +77,12 @@ b
     text-transform: uppercase
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
     font-size: 0.9rem
+
+    &.chip-red
+        background-color: $red
+    
+    &.chip-blue
+        background-color: lightblue
 
 @import nav
 @import main

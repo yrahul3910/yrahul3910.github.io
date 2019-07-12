@@ -54,7 +54,7 @@ export default [
         info: 
             <div>
                 <p>
-                    This is a fun side project I worked on. For around 6 months, I collected data on every single activity I do, with a total of 30 activity categories. I then used this data to analyze my most productive hours and built a 2-layer LSTM to predict my next activity based on the previous five.
+                    This is a fun side project I worked on. For around 10 months, I collected data on every single activity I do, with a total of 30 activity categories. I then used this data to analyze my most productive hours and built a 2-layer LSTM to predict my next activity based on the previous five.
                 </p>
                 <p>
                     <b>Link: </b><a href="https://github.com/yrahul3910/ActivityDataProject">GitHub repository</a>.
