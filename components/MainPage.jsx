@@ -10,6 +10,7 @@ import researchInterests from "../src/research_interests";
 import contacts from "../src/contacts.jsx";
 import projects from "../src/projects.jsx";
 import skills from "../src/skills.jsx";
+import coffee from "../src/coffee.jsx";
 
 export default class MainPage extends React.Component {
     constructor(props) {
@@ -79,6 +80,13 @@ export default class MainPage extends React.Component {
                             <h1>Skills</h1>
                             <SkillSet skills={skills} />
                         </div>
+                    </section>
+                    <section id="hobbies">
+                        <h1>Coffee</h1>
+                        <p>
+                            A major hobby of mine is experimenting with different ways of brewing better coffee. I learned a lot of what I know from watching <a href="https://www.youtube.com/channel/UCMb0O2CdPBNi-QqPk5T3gsQ">James Hoffmann's channel on YouTube</a>. Click the cards below to view my brewing process.    
+                        </p>
+                        <CardGrid cards={coffee} />
                     </section>
                     <section id="contact" className="red-background">
                         <h1>Contact</h1>

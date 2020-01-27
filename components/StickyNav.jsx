@@ -20,6 +20,11 @@ export default class StickyNav extends React.Component {
         el.scrollIntoView({block: "start", behavior: "smooth"});
     }
 
+    hobbies() {
+        let el = document.getElementById("hobbies");
+        el.scrollIntoView({block: "start", behavior: "smooth"});
+    }
+
     contact() {
         let el = document.getElementById("contact");
         el.scrollIntoView({block: "start", behavior: "smooth"});
@@ -35,6 +40,7 @@ export default class StickyNav extends React.Component {
             <li onClick={this.showMenu} id="hamburger"><i className="fas fa-bars"></i></li>
             <li onClick={this.research}>Research</li>
             <li onClick={this.project}>Projects</li>
+            <li onClick={this.hobbies}>Coffee</li>
             <li onClick={this.contact}>Contact</li>
             <li><a href="https://github.com/yrahul3910/resume/blob/master/business/resume.pdf">CV</a></li>
             <li><Link to="/whyrahul/tldr">TL;DR</Link></li>
