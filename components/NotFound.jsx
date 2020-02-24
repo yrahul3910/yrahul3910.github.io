@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default class NotFound extends React.Component {
     componentDidMount() {
         setTimeout(() => {
-            window.location.replace("/whyrahul");
+            window.location.replace("/");
         }, 5000);
     }
 
@@ -13,7 +13,7 @@ export default class NotFound extends React.Component {
             <main>
                 <h1>404</h1>
                 <p style={{textAlign: "center"}}>You will be redirected to the main page in 5 seconds.</p>
-                <p style={{textAlign: "center"}}>Or, <Link to="/whyrahul">click here</Link> to redirect now.</p>
+                <p style={{textAlign: "center"}}>Or, <Link to="/">click here</Link> to redirect now.</p>
             </main>
         );
     }
